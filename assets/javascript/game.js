@@ -67,12 +67,12 @@ function applyCrystalValue(crystalValue) {
     // WINNER!
     if (totalScore === randomNumber) {
         
-        wins++;
-        $("#wins").html(wins);
-
         sound.src = "assets/audio/space-ripple.wav";
         sound.play();
 
+        wins++;
+        $("#wins").html(wins);
+        
         $(".crystal-image").attr("src", "assets/images/crystal.gif");
 
         reset();
@@ -85,11 +85,12 @@ function applyCrystalValue(crystalValue) {
     // Loss
     else if (totalScore > randomNumber) {
 
+        sound.src = "assets/audio/bell-toll.wav";
+        sound.play();
+
         losses++;
         $("#losses").html(losses);
         
-        sound.src = "assets/audio/bell-toll.wav";
-        sound.play();
  
         $(".crystal-image").attr("src", "assets/images/crystal.gif");
 
