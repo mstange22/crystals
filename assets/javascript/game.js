@@ -37,17 +37,17 @@ function reset() {
     $("crystal-image").attr("src", "../images/crystal-spin.gif");
 
     // get a new random number
-    randomNumber = Math.floor(Math.random() * 101 + 19);
+    randomNumber = Math.floor(Math.random() * 102 + 19);
     $("#random").html(randomNumber);
 
     // reset score
     totalScore = 0;
     $("#score").html(0);
 
-    crystal1 = Math.floor(Math.random() * 11 + 1);
-    crystal2 = Math.floor(Math.random() * 11 + 1);
-    crystal3 = Math.floor(Math.random() * 11 + 1);
-    crystal4 = Math.floor(Math.random() * 11 + 1);
+    crystal1 = Math.floor(Math.random() * 13 + 1);
+    crystal2 = Math.floor(Math.random() * 12 + 1);
+    crystal3 = Math.floor(Math.random() * 12 + 1);
+    crystal4 = Math.floor(Math.random() * 12 + 1);
 }
 
 
@@ -104,24 +104,56 @@ function applyCrystalValue(crystalValue) {
 // wait for start button click to start
 $(document).ready(function() {
 
-    // $("#play-button").on("click", function() {
-        reset();
-    // });
+    $(".crystal-image").attr("src", "assets/images/crystal.gif");
+       
+    reset();
+
+    setTimeout(function() {
+
+        $(".crystal-image").attr("src", "assets/images/tmp-45.gif");
+    }, 1250);
 
     $("#crystal-image-1").on("click", function() {
-
+       
+        $("#crystal-image-1").attr("src", "assets/images/crystal.gif");
+        
         applyCrystalValue(crystal1);
+
+        setTimeout(function() {
+            $(".crystal-image").attr("src", "assets/images/tmp-45.gif");
+        }, 1250);
     });
 
     $("#crystal-image-2").on("click", function() {
+
+        $("#crystal-image-2").attr("src", "assets/images/crystal.gif");
+
         applyCrystalValue(crystal2);
+
+        setTimeout(function() {
+            $(".crystal-image").attr("src", "assets/images/tmp-45.gif");
+        }, 1250);
     });
 
     $("#crystal-image-3").on("click", function() {
+       
+        $("#crystal-image-3").attr("src", "assets/images/crystal.gif");
+
         applyCrystalValue(crystal3);
+
+        setTimeout(function() {
+            $(".crystal-image").attr("src", "assets/images/tmp-45.gif");
+        }, 1250);
     });
 
     $("#crystal-image-4").on("click", function() {
+
+        $("#crystal-image-4").attr("src", "assets/images/crystal.gif");
+
         applyCrystalValue(crystal4);
+
+        setTimeout(function() {
+            $(".crystal-image").attr("src", "assets/images/tmp-45.gif");
+        }, 1250);
     });
 });
