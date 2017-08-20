@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--     <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CrystalsCollector!</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -26,72 +26,65 @@
         </div>
     </div>
 <div class="jumbotron">
+
 	<div class="container">
+
 		<div class="row">
+
             <div class="col-md-4 col-sm-4 col-xs-4">
-            	<div id="wins-container"
-	            <h2>Wins</h2>
-            	<h3 id="wins">0</h3>
+
+            	<div id="wins-container">
+	            	<h2>Wins</h2>
+            		<h3 id="wins">0</h3>
             	</div>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-4" id="button-container">
-                <div id="play-button" class="btn btn-primary btn-lg" role="button">Play</div>
-            </div>
             <div class="col-md-4 col-sm-4 col-xs-4">
-            	<div id="losses-container"
+    	    	<div id="random">0</div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-4">
+
+            	<div id="losses-container">
 	            	<h2>Losses</h2>
 	            	<h3 id="losses">0</h3>
             	</div>
             </div>
         </div>
-    	<div class="row">
-            <div class="col-md-5 col-sm-5 col-xs-5" id="button-container">
-			</div>    	            
-            <div class="col-md-2 col-sm-2 col-xs-2" id="button-container">
-    	    	<div id="random">0</div>
-			</div>    	            
-            <div class="col-md-5 col-sm-5 col-xs-5" id="button-container">
-			</div>    	            
-		</div>
+
 	</div>
 </div>
+<div class="jumbotron" id="bottom-jumbotron">
 	<div class="container">
     	<div class="row crystal-row">            
             <div class="col-md-3 col-sm-3 col-xs-3">
-            	<div class="crystal-container">
-                	<img id="crystal-image-1" class="crystal-image" src="assets/images/tmp-0.gif">
-                </div>
+                <a href="#"><img id="crystal-image-1"class="crystal-image" src="assets/images/tmp-0.gif"></a>
+                <p id="c1"></p>
             </div>            
             <div class="col-md-3 col-sm-3 col-xs-3">
-            	<div class="crystal-container">
-                	<img id="crystal-image-1" class="crystal-image" src="assets/images/tmp-0.gif">
-                </div>
+                <a href="#"><img id="crystal-image-2" class="crystal-image" src="assets/images/tmp-0.gif"></a>
+                <p id="c2"></p>
             </div>            
             <div class="col-md-3 col-sm-3 col-xs-3">
-            	<div class="crystal-container">
-                	<img id="crystal-image-1" class="crystal-image" src="assets/images/tmp-0.gif">
-                </div>
+                <a href=#"><img id="crystal-image-3" class="crystal-image" src="assets/images/tmp-0.gif"></a>
+                <p id="c3"></p>
             </div>            
             <div class="col-md-3 col-sm-3 col-xs-3">
-            	<div class="crystal-container">
-                	<img id="crystal-image-1" class="crystal-image" src="assets/images/tmp-0.gif">
-                </div>
+                <a href="#"><img id="crystal-image-4" class="crystal-image" src="assets/images/tmp-0.gif"></a>
+                <p id="c4"></p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-5">
+			</div>    	            
+            <div class="col-md-2 col-sm-2 col-xs-2">
+    	    	<div id="score">0</div>
+			</div>    	            
+            <div class="col-md-5 col-sm-5 col-xs-5">
+			</div>    	            
+		</div>
     </div>
-<div class="jumbotron" id="score-jumbotron">
-    <div class="container">
-    	<div class="row">
-            <div class="col-md-5 col-sm-5 col-xs-5" id="button-container">
-			</div>    	            
-            <div class="col-md-2 col-sm-2 col-xs-2" id="button-container">
-    	    	<div id="random">0</div>
-			</div>    	            
-            <div class="col-md-5 col-sm-5 col-xs-5" id="button-container">
-			</div>    	            
-		</div>	
-   	</div>
-</div>    
+</div>
+
     <audio>
         <source src="" type="audio/mpeg">
     </audio>

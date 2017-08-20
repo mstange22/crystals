@@ -4,12 +4,20 @@ html {
 
 body {
 	height: 100%;
-	background-color: #cccccc;
+	background-color: #ffffff;
+}
+
+h2 {
+	margin-top: 10px;
+}
+
+h3#wins, h3#losses{
+	margin-top: 10px;
+	font-weight: normal;
 }
 
 #navbar {
 	border-radius: unset;
-	background-color: #dddddd;
 }
 
 #navbar-container {
@@ -22,17 +30,8 @@ body {
 	text-align: center;
 	font-size: 44px;
 	font-family: inherit;
-	color: #ffffff;
-	background-color: #337ab7;
-}
-
-#navbar-right li a {
-	color: #286090;
-}
-
-
-#navbar-right li>a:hover {
-	color: #337ab7;
+	color: #000000;
+	background-color: #ecf6fe;
 }
 
 .jumbotron {
@@ -43,15 +42,13 @@ body {
 	width: 95%;
 	max-height: 95%;
 	text-align: center;
-	border: 2px solid black;
+	border: 1px solid #cccccc;
 	border-radius: 5px;
 	padding: 10px;
 }
 
-#score-jumbotron {
-	border: none;
-	padding: 0;
-	background-color: #cccccc;
+#bottom-jumbotron.jumbotron {
+	padding-top: 20px;
 }
 
 #wins, #losses {
@@ -62,7 +59,7 @@ body {
 	margin-top: 10px;
 }
 
-p {
+.jumbotron p {
 	margin-bottom: 10px;
 }
 
@@ -70,24 +67,12 @@ p {
 	margin-bottom: 0;
 }
 
-#status {
-	padding: 0;
-}
-
-.btn.btn-primary.btn-lg {
-	display: block;
-	clear: both;
-	margin: 5px auto;
-	max-width: 100%;
-	width: 80px;
-	border-color: black;
-}
-
 #random, #score {
 	margin: auto;
+	width: 80px;
 	padding: 10px;
 	background-color: #ffffff;
-	border: 2px solid black;
+	border: 1px solid #cccccc;
 	border-radius: 4px;
 	text-align: center;
 	font-weight: bold;
@@ -96,6 +81,12 @@ p {
 }
 
 #random {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#score {
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
@@ -114,7 +105,7 @@ p {
 	margin: auto;
 	padding: 10px;
 	background-color: #eeeeee;
-	border: 2px solid black;
+	border: 1px solid #cccccc;
 	border-radius: 4px;
 }
 
@@ -122,7 +113,7 @@ img {
 	padding: 0;
 	display: block;
 	margin: auto;
-	border: 2px solid black;
+	border: 1px solid #cccccc;
 	border-radius: 4px;
 	max-width: 100%;
 }
@@ -132,8 +123,8 @@ img {
 
 	.navbar {
 		border-radius: unset;
-		background-color: #337ab7;
-		border-bottom: 2px solid black;
+		background-color: #ecf6fe;
+		border-bottom: 1px solid #cccccc;
 	}
 
 }
