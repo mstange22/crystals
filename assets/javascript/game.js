@@ -70,10 +70,16 @@ function applyCrystalValue(crystalValue) {
         wins++;
         $("#wins").html(wins);
 
+        $(".crystal-image").attr("src", "assets/images/crystal.gif");
+
         sound.src = "assets/audio/space-ripple.wav";
         sound.play();
 
-        setTimeout(reset, 1000);
+        reset();
+
+        setTimeout(function() {
+            $(".crystal-image").attr("src", "assets/images/tmp-45.gif");
+        }, 3730);
     }
 
     // Loss
@@ -81,11 +87,17 @@ function applyCrystalValue(crystalValue) {
 
         losses++;
         $("#losses").html(losses);
-        
+ 
+        $(".crystal-image").attr("src", "assets/images/crystal.gif");
+       
         sound.src = "assets/audio/bell-toll.wav";
         sound.play();
 
-        setTimeout(reset,1000);
+        reset();
+
+        setTimeout(function() {
+            $(".crystal-image").attr("src", "assets/images/tmp-45.gif");
+        }, 3730);
     }
 }
 
