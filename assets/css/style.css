@@ -32,6 +32,8 @@ h3#wins, h3#losses{
 	font-family: inherit;
 	color: #000000;
 	background-color: #ecf6fe;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .jumbotron {
