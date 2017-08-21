@@ -18,16 +18,6 @@ var totalScore = 0;
 
 var sound = new Audio();
 
-/*
- * writeHTML()
- * Update HTML based on results of click event.
- */
-// function writeHTML() {
-//     $("#score").html(totalScore);
-//     $("h3#wins").html(wins);
-//     $("h3#lossses").html(losses);
-// }
-
 /* reset()
  * Reset for new game.
  */
@@ -50,7 +40,6 @@ function reset() {
     crystal4 = Math.floor(Math.random() * 12 + 1);
 }
 
-
 /*
  * applyCrystalValue(crystalValue)
  * Adds the value of the clicked crystal to the total score.
@@ -63,7 +52,7 @@ function applyCrystalValue(crystalValue) {
     
     totalScore += crystalValue;
     
-    // writeHTML();
+    $("#score").html(totalScore);
 
     // WINNER!
     if (totalScore === randomNumber) {
