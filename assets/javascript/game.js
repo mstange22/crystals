@@ -22,11 +22,11 @@ var sound = new Audio();
  * writeHTML()
  * Update HTML based on results of click event.
  */
-function writeHTML() {
-    $("#score").html(totalScore);
-    $("h3#wins").html(wins);
-    $("h3#lossses").html(losses);
-}
+// function writeHTML() {
+//     $("#score").html(totalScore);
+//     $("h3#wins").html(wins);
+//     $("h3#lossses").html(losses);
+// }
 
 /* reset()
  * Reset for new game.
@@ -57,12 +57,13 @@ function reset() {
  * Check to see if the total score is equal to the random number (win),
  * greater than the random number (loss).  If neither (the else condition),
  * return back to the document ready function and listen for more click events.
+ * Parameter: crystalValue - the amount to use for updating the score.
  */
 function applyCrystalValue(crystalValue) {
     
     totalScore += crystalValue;
     
-    writeHTML();
+    // writeHTML();
 
     // WINNER!
     if (totalScore === randomNumber) {
@@ -71,6 +72,7 @@ function applyCrystalValue(crystalValue) {
         sound.play();
 
         wins++;
+
         $("#wins").html(wins);
         
         $(".crystal-image").attr("src", "assets/images/crystal.gif");
